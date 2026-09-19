@@ -1,5 +1,5 @@
 {
-  "name": "봉사 신청 관리 (Volunteer Application Management) v1.4",
-  "description": "A web application for managing and signing up for volunteer service opportunities. It features a calendar-based system with different roles for service leaders and volunteers.",
+  "name": "중동남부 봉사 신청 관리",
+  "description": "중동남부 지역을 위한 봉사 신청 관리 시스템입니다.",
   "requestFramePermissions": []
 }
