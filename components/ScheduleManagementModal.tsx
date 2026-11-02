@@ -111,12 +111,22 @@ const ScheduleManagementModal: React.FC<ScheduleManagementModalProps> = ({
               </div>
                <div>
                 <label className="block text-sm font-medium text-gray-700">종류</label>
-                <select name="type" value={formData.type} onChange={handleInputChange} className="mt-1 block w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                  <option value="호별">호별</option>
-                  <option value="전시대">전시대</option>
-                  <option value="전시대&호별">전시대&호별</option>
-                  <option value="편의점">편의점</option>
-                </select>
+                <input 
+                  type="text" 
+                  name="type" 
+                  value={formData.type} 
+                  onChange={handleInputChange} 
+                  list="service-types-list"
+                  placeholder="종류 선택 또는 직접 입력" 
+                  className="mt-1 block w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+                  required 
+                />
+                <datalist id="service-types-list">
+                  <option value="호별" />
+                  <option value="전시대" />
+                  <option value="전시대&호별" />
+                  <option value="편의점" />
+                </datalist>
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700">장소</label>

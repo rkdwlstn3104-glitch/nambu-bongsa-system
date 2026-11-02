@@ -145,8 +145,8 @@ const VolunteerServiceCard: React.FC<{
     return (
         <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
             <div className="flex justify-between items-start">
-                <div>
-                    <div className="flex items-center gap-2 mb-1">
+                <div className="pr-40 sm:pr-24">
+                    <div className="flex items-center flex-wrap gap-2 mb-1">
                         <h4 className="font-bold text-lg text-gray-900">{service.time}</h4>
                         <span className={`px-2 py-0.5 text-[10px] font-bold rounded-full ${
                             service.type === '전시대' ? 'bg-blue-100 text-blue-800' : 
